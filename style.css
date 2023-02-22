@@ -1,0 +1,151 @@
+/* Add custom styles below */
+:root {
+  --primary-color: #4CAF50;
+  --secondary-color: #689F38;
+  --tertiary-color: #333;
+  --background-color: #f0f0f0;
+  --font-family: 'Lato', sans-serif;
+}
+
+header {
+  background-color: #E8EAF6; /* This is the Material UI color "Lavender" */
+  padding: 20px;
+}
+
+header h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 36px;
+  text-align: center;
+  color: #333;
+}
+
+section h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 24px;
+  color: #689F38; /* This is the Material UI color "Light Green" */
+}
+
+section ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+section li {
+  font-family: 'Lato', sans-serif;
+  font-size: 16px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+body {
+  max-width: 800px;
+  background-color: #E8EAF6; /* This is the Material UI color "Lavender" */
+  margin: 0 auto;
+  font-family: var(--font-family);
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+/* BUTTON */
+.button {
+  background-color: var(--primary-color);
+  color: #fff;
+  padding: 12px 24px;
+  border-radius: 4px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.2s ease-out;
+}
+
+.button:hover {
+  background-color: #3e8e41;
+}
+
+/* COLLAPSIBLE */
+.collapsible {
+  background-color: var(--primary-color);
+  color: #fff;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 24px;
+  transition: background-color 0.2s ease-out;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.collapsible:hover {
+  background-color: var(--secondary-color);
+}
+
+.collapsible.active {
+  background-color: var(--secondary-color);
+}
+
+/* HEADINGS */
+h1, h2, h3 {
+  font-weight: normal;
+  margin-top: 1em;
+  margin-bottom: 0.5em;
+  text-transform: none;
+  letter-spacing: 0;
+}
+
+h1 {
+  font-size: 42px;
+  color: var(--tertiary-color);
+}
+
+h2 {
+  font-size: 28px;
+  color: var(--tertiary-color);
+}
+
+h3 {
+  font-size: 22px;
+  color: var(--tertiary-color);
+}
+
+
+.content {
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 20px;
+  border-radius: 4px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+ul {
+  list-style: none;
+  padding-left: 1.2em;
+}
+
+li {
+  position: relative;
+  font-size: 14px;
+  margin-bottom: 0.5em;
+  color: var(--tertiary-color);
+  padding-left: 1em;
+}
+
+li:before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: var(--primary-color);
+}
+
+th, td {
+  border: 1px solid var(--tertiary-color);
+  padding: 10px;
+}
+
+th {
+  background-color: var(--secondary-color);
+  color: #fff;
+  text-align: left;
+}

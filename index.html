@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Matthew Page's Resume</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+        var coll = document.querySelectorAll(".collapsible");
+        for (var i = 0; i < coll.length; i++) {
+          var content = coll[i].nextElementSibling;
+          content.style.display = "none";
+          coll[i].addEventListener("click", function(event) {
+            event.stopPropagation();
+            var content = this.nextElementSibling;
+            if (content.style.display === "block") {
+              content.style.display = "none";
+            } else {
+              content.style.display = "block";
+            }
+          });
+        }
+      });
+    </script>
+  </head>
+  <body>
+    <header>
+      <h1>Matthew Page</h1>
+    </header>
+       <div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="560459bd-54f4-4ac6-a9a6-41ef177b8c8c" data-share-badge-host="https://www.credly.com"></div><script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
+    <section>
+      <h2>Contact Information</h2>
+      <ul>
+        <li>E-mail: mancelpage@protonmail.com</li>
+        <li>Phone: (406) 792-5173</li>
+        <li>Address: El Paso, TX 79924</li>
+      </ul>
+    </section>
+    <section>
+      <h2 class="collapsible">Qualifications</h2>
+      <div class="content">
+        <ul>
+          <li>CASP+ certified with TS/SCI</li>
+          <li>Network systems administration</li>
+          <li>Technical training and instruction</li>
+          <li>Recovered corrupted VMs, troubleshot taclanes, routers, switches, ran and tested cables</li>
+          <li>Frequently learning outside of work: <ul>
+              <li>Setup a Raspberry Pi as a DNS server, wireless bridge, and VPN concentrator</li>
+              <li>Managed Linux in a VM on the cloud, kept a complete backup via git, promptly recovered from being hacked, added further security, and coded bash scripts</li>
+            </ul>
+          </li>
+          <li>Python and SQL class via WGU</li>
+          <li>Skilled typist</li>
+          <li>Microsoft Office, accessing databases, and organizational software</li>
+          <li>Managing both local/cloud VMs and system/VM images</li>
+          <li>Classroom management and engagement</li>
+          <li>Exam/game development and assessment</li>
+        </ul>
+      </div>
+    </section>
+    <section>
+      <h2 class="collapsible">Education</h2>
+      <div class="content">
+      <h3>CompTIA Certifications</h3>
+        <ul>
+          <li>CASP+</li>
+          <li>Security+</li>
+          <li>Network+</li>
+          <li>Itf+</li>
+        </ul>
+        <h3>Data Management/Data Analytics, Western Governors University</h3>
+        <ul>
+          <li>74 credits</li>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section>
+      <h2 class="collapsible">Work Experience</h2>
+      <div class="content">
+        <h3>Network Systems Administrator Instructor at BMA (September 2022 - Present)</h3>
+        <ul>
+          <li>Delivered training on A+, Sec+, ITF+, and CASP+ to soldiers</li>
+          <li>Used a combination of games, tests, and presentations to convey course material in a clear and engaging manner.</li>
+          <li>Assessed student understanding through exams with thorough explanations</li>
+          <li>Maintained a positive and engaging classroom environment, encouraging active participation and collaboration among students.</li>
+          <li>Achieved a high passing rate on CompTIA exams among students.</li>
+        </ul>
+        <h3>US Army (June 2018 - March 2021 Active Duty, Reserve - Present), Network Operator</h3>
+        <ul>
+          <li>Monitored and maintained the network to include: <ul>
+              <li>Cisco/Juniper routers, switches, VMs, and CallManager</li>
+              <li>Successfully led a JNN team in Poland</li>
+              <li>Received a Certificate of Achievement at the National Training Center in California due to excellent performance and availability of the network during war games</li>
+            </ul>
+          </li>
+          <li>Waivered to CPL in Feb 2020, joining the ranks of non-commissioned officers at only 20 months</li>
+        </ul>
+      </div>
+    </section>
+  </body>
+</html>
